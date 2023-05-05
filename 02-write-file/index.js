@@ -25,3 +25,7 @@ rl.on('line', (input) => {
         writeStream.write(input);
     }
 });
+
+rl.on('close',()=>{
+    console.log("Exit, Bye!")
+})
